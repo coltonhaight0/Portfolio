@@ -1,12 +1,15 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
-date: "2026-01-11"
-categories: [news]
+title: "Welcome To My Portfolio"
+author: "Colton Haight"
+date: "2026-01-21"
+categories: [Welcome]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+Hello!
 
-![](thumbnail.jpg)
+My name is Colton Haight and this is my portfolio website. In this website you will find my resume and Linkedin account as well as blog posts about sports data explorations over certain topics. 
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+Thank you for stopping by!
+
+
+

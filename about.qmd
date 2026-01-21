@@ -1,19 +1,14 @@
 ---
 title: "About"
-image: profile.jpg
+image: about_picture.jpg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
     - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com
+      href: https://www.linkedin.com/in/colton-haight-672487347/?trk=opento_sprofile_goalscard
+    - text: "Resume"
+      href: Colton-Haight-Resume.pdf
 
 ---
 
-About this blog
+Welcome to my Portfolio Website. My name is Colton Haight and I am a student at the University of Nebraska-Lincoln on track for a Bachelors of Science in Statistics & Data Analytics with a minor in Mathematics. Below are links to my resume and my Linkedin account.

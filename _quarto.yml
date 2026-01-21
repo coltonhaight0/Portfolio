@@ -8,13 +8,13 @@ website:
   navbar:
     right:
       - about.qmd
-      - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+      - icon: linkedin
+        href: https://www.linkedin.com/in/colton-haight-672487347/?trk=opento_sprofile_goalscard
+      - text: "Resume"
+        href: Colton-Haight-Resume.pdf
 format:
   html:
-    theme: cosmo
+    theme: darkly
     css: styles.css
 
 
