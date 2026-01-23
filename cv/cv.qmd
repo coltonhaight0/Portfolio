@@ -1,0 +1,84 @@
+---
+author: Colton Haight
+format:
+  classic-cv-pdf: default
+cvfooter:
+  left: "coltonhaight0.github.io"
+  right: "github.com/schochastics"
+cvcolor: 58748F #without `#`
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvmeta:
+  - title: Status
+    left: Student at University of Nebraska-Lincoln
+    right: Lincoln, Nebraska
+  - title: Field
+    left: Statistics and Data Analytics, Mathmatics
+    right: coltonhaight0.github.io/Portfolio/
+  - title: Skills
+    left: R, SAS, Python
+    right: coltonhaight01@gmail.com
+execute:
+  echo: false
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, details) {
+
+    command_start <- "\\cvevent"
+
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}")
+    
+    tbl[[details]] <- sapply(tbl[[details]], function(x) paste0("{", x, "}", collapse = ","))
+    res <- paste0(res, "{",tbl[[details]],"}")
+
+    cat(res, sep = "\n")
+}
+```
+
+# Summary
+
+Hello, my name is Colton Haight. I am a reliable student who has excellent communication skills as well as trustworthiness. Creative and disciplined individual who is excited to use my skills towards my future.
+
+# Experience
+
+```{r}
+#| label: experience
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details, ~tasks,
+    "Maintenance Worker", "Lincoln Sports Foundation", "Aug. 2024 - Present",
+    "Lincoln Sports Foundation", c("Maintaining and keeping up with sports complex", "Working with other workers and communicating well", "Maintaining soccer fields and basketball courts"),
+    "Evening Cook", "Sutton Community Home", "Dec. 2022 - Jan. 2025",
+    "Sutton Community Home", c("Provided daily care to nursing home residents", "Managed residents' dietary needs", "Managed dietary aids in serving residents food"),
+    "EBA Coach", "Elementary Basketball League", "2021 - 2022", "Coach", c("Learned to stay calm in chaotic situations", "Problem soliving in during high stress situations", "Managed young kids who had difficulty listening and following directions")) |>
+    cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
+```
+
+# Education
+
+```{r }
+#| label: education
+#| output: asis
+tibble::tribble(
+    ~degree, ~uni, ~loc, ~dates, ~details,
+    "Bachelor of Science in Statistics and Data Analytics", "University of Nebraska-Lincoln", "Lincoln, Nebraska", "Aug. 2022 - Dec. 2026", c("Minor: Mathmatics", "Relevant Coursework: Statistical Computing I and II, Technical Skills for Statiscian", "Categorical Data Analysis, Study Design, Staistical Consulting, Probability for Statisticians", "Portfolio Website: coltonhaight0.github.io/Portfolio/", "Deans List: Spring 2025"),
+    "Sutton High School", "Sutton, NE", "Sutton, NE", "Aug. 2018 - May 2022", c("GPA: 4.0", "Sutton Honor Society: 2019 - 2022")
+) |>
+    cvevents(when = "dates", what = "degree", where = "loc", details = "details")
+```
+
+# Activites
+
+```{r }
+#| label: activites
+#| output: asis
+tibble::tribble(
+    ~degree, ~uni, ~loc, ~dates, ~details,
+    " ", " ", " ", " ", c("Sutton Public Schools Student Council: 2018 - 2022", "Sutton FCA: 2018 - 2022")
+) |>
+    cvevents(when = "dates", what = "degree", where = "loc", details = "details")
+```

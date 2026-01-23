@@ -7,7 +7,7 @@ about:
     - icon: linkedin
       href: https://www.linkedin.com/in/colton-haight-672487347/?trk=opento_sprofile_goalscard
     - text: "Resume"
-      href: Colton-Haight-Resume.pdf
+      href: cv/cv.qmd
     - text: "Cover Letter"
       href: Colton_Cover_Letter_copy.pdf
     
